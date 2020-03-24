@@ -1,6 +1,8 @@
 package data.dto;
 
-public class BaseDTO {
+import java.io.Serializable;
+
+public class BaseDTO implements Serializable {
     private String id;
 
     public BaseDTO(String id) {
