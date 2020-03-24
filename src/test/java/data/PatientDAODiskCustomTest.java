@@ -1,14 +1,14 @@
 package data;
 
+import data.dto.PatientDAODiskStringImpl;
 import data.dto.PatientDTO;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class PatientDAOTest {
-    PatientDAO dao = new PatientDAODiskImpl();
+class PatientDAODiskCustomTest {
+    PatientDAO dao = new PatientDAODiskStringImpl();
     PatientDTO patientDTO = new PatientDTO("Brian",null);
     static String patientId = null;
 
